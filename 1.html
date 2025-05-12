@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .price {
+      color: #e67e22;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-card button {
+      padding: 0.5rem 1.5rem;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-card button:hover {
+      background-color: #cf711f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>ElectroMart</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <div class="product-card">
+      <img src="https://imgs.search.brave.com/r_BwuqRNa_ZMxEI2LeYjNbopo2Ow2-KyGeg1igiqVQ8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/Z2FiYi5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDcv/Z2FiYi1waG9uZS00/LXByby1wcm9maWxl/LXBpYy0zNjB4MzYw/LnBuZw" alt="Smartphone" />
+      <h2>Smartphone X20</h2>
+      <p>Latest smartphone with 6.7" display, 5G support, and 108MP camera.</p>
+      <p class="price">699.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://imgs.search.brave.com/mJ55vZHLpUHkTcRGYsaynJ_-wfWiUiEY6dzASx6P1j4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvOTUx/MDY1NDI0L3Bob3Rv/L3NtYXJ0LXdhdGNo/LWlzb2xhdGVkLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1n/bm9wZW5IamdJS0pJ/Yl9XY1lxZ3hFWHdF/bnYyLUVfeGFxbHUt/bzlqYm5vPQ" alt="Smartwatch" />
+      <h2>Smartwatch Pro</h2>
+      <p>Stay connected with a sleek and modern smartwatch featuring health tracking.</p>
+      <p class="price">199.00</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+      <img src="https://imgs.search.brave.com/nrkWIsY6U8n97Z6OBRSAYriQY3MY8lrpAdaJdcuoc1A/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9zZW8vQXBw/bGUtQWlyUG9kcy1Q/cm8tMi1XaXJlbGVz/cy1FYXJidWRzLUFj/dGl2ZS1Ob2lzZS1D/YW5jZWxsYXRpb24t/SGVhcmluZy1BaWQt/RmVhdHVyZV80ZTIz/NjIzZC05NGVkLTRi/YWMtODUxYS1iMWZk/ZTdlZWI5NjIuMTUy/M2FmNjVmZmI3ZjJl/MmJlMjhjOGIzZjBh/MDA4ZmEuanBlZz9v/ZG5IZWlnaHQ9NTgw/Jm9kbldpZHRoPTU4/MCZvZG5CZz1GRkZG/RkY" alt="Wireless Earbuds" />
+      <h2>Wireless Earbuds</h2>
+      <p>Noise-cancelling, high-quality sound, and 20 hours of battery life.</p>
+      <p class="price">89.00</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ElectroMart. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
